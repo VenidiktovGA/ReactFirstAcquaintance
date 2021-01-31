@@ -1,0 +1,41 @@
+.nav {
+	background-color: red;
+	grid-area: site-nav;
+}
+
+.nav ul {
+	counter-reset: li;
+	list-style: none;
+}
+
+.nav a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: 1em .5em;
+background: #DAD2CA;
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+}
+
+.nav a::before {
+	content: counter(li);
+	counter-increment: li;
+	background: #8FD4C1;
+	position: absolute;
+	bottom:50%;
+	top: 50%;
+	left: -1.3em;
+	margin-top: -1.3em;
+	border: .3em solid white;
+	width: 2em;
+	font-weight: bold;
+	border-radius: 2em;
+	text-align: center;
+	height: 2em;
+}
+
+.nav a:hover {
+	background: gold;
+}

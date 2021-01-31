@@ -1,18 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import { Header } from './components/Header';
-import { Nav } from './components/Nav';
-import { Main } from './components/Main';
-import { Footer } from './components/Footer';
+import { Header } from './components/Header/Header';
+import { Nav } from './components/Nav/Nav';
+import { Main } from './components/Main/Main';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
 	return (
-		<body className='site-wrapper'>
+		<div className='site-wrapper'>
 			<Header/>
 			<Nav/>
 			<Main/>
 			<Footer/>
-		</body>
+		</div>
 	);
 }
 

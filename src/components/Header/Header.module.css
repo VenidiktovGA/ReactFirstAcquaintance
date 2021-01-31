@@ -1,0 +1,8 @@
+.header {
+	background-color: aqua;
+	grid-area: site-header;
+}
+
+.header img {
+	height: 150px;
+}
