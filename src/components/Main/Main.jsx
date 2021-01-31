@@ -1,12 +1,16 @@
 import React from 'react'
 import styles from './Main.module.css'
-import { Task } from './Task/Task'
+import { Letters } from '../Letters/Letters'
+import { Numeral } from '../Numeral/Numeral'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 export const Main = () => {
-	return(
-		<main className={styles.main}>
-			<Task title='Напиши слово'/>
-			<Task title='Найди слово' />
-		</main>
+	return (
+		<BrowserRouter>
+			<main className={styles.main}>
+				<Route path='/Letters' component={Letters} />
+				<Route path='/Numeral' component={Numeral} />
+			</main>
+		</BrowserRouter>
 	)
 }
