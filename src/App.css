@@ -1,12 +1,20 @@
 .site-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 10fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 10fr 2fr;
 	grid-template-areas:
 	"site-header site-header site-header"
-	"site-nav site-main site-main"
+	"site-main site-main site-main"
 	"site-footer site-footer site-footer";
 	background-color: gold;
 	grid-gap: 1rem;
 	margin: 0 1rem 0 1rem;
+}
+
+.rout-wrapper {
+	grid-area: site-main;
+	display: grid;
+	grid-template-columns: 1.5fr 10fr;
+	grid-template-rows: 1fr;
+	grid-gap: 1rem;
 }

@@ -1,6 +1,5 @@
 .main {
 	background-color: blue;
-	grid-area: site-main;
 	background-image: url(../../assets/images/maiBackground.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
