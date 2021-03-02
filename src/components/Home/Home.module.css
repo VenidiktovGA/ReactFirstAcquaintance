@@ -1,0 +1,13 @@
+.container {
+	display: grid;
+	justify-items: center;
+}
+
+.header {
+	font-size: 12rem;
+}
+
+.slogan {
+	font-size: 5rem;
+	text-align: center;
+}
